@@ -34,3 +34,27 @@
 /* 以下、好みに応じて子テーマ用のスタイルをお書きください。
  * ( Below here, please write down your own styles for the child theme. )
  */
+
+/*記事のh2の設定*/
+.post h2{
+margin-left:0;
+padding: .5em 0 .5em .75em;/*文字の上右下左の余白*/
+background: #f6f6f6;/*背景色*/
+border-left: solid 8px #005481;/*左線*/
+border-bottom: 2px solid #ccc;/*下線*/
+}
+
+/*記事のh3の設定*/
+.post h3 {
+margin-left:0;
+position: relative;
+padding: .25em 0 .25em .75em;
+border-left: 8px solid #005481;
+border-bottom: 1px solid #ccc;
+}
+
+/*記事のh4の左ボーダー設定色*/
+.post h4{
+padding: .15em 0 .15em .75em;
+border-left: 8px solid #005481;
+}
