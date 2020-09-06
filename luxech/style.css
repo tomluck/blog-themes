@@ -58,3 +58,9 @@ border-bottom: 1px solid #ccc;
 padding: .15em 0 .15em .75em;
 border-left: 8px solid #005481;
 }
+
+/* タイトル直後にアイキャッチ画像を表示するための設定 */
+.post-top-thumbnail {
+	text-align: center;
+	margin-bottom: 30px;
+}

@@ -15,3 +15,13 @@
 
 /* 以下、好みに応じて子テーマ用の関数をお書きください。
  ( Below here, please write down your own functions for the child theme. ) */
+
+/* タイトル直後にアイキャッチ画像を表示するための設定 */
+function display_post_top_thumbnail( $content ){
+	if( has_post_thumbnail() === true ) {
+		global $post;
+		$content = '<div class="post-top-thumbnail">' .  get_the_post_thumbnail( $post->ID, 'full' ) . '</div>' . $content;
+	}
+	return $content;
+}
+add_filter( 'thk_content', 'display_post_top_thumbnail', 11, 1 );
